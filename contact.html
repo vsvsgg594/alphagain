@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Welcome To Alpha Gain</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://pcapnetwork.com/assets/img/favicon.png" rel="icon">
+  <link href="https://pcapnetwork.com/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://pcapnetwork.com/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://pcapnetwork.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://pcapnetwork.com/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://pcapnetwork.com/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://pcapnetwork.com/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://pcapnetwork.com/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="https://pcapnetwork.com/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #030b14;
+      color: #fff;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Header Styles */
+    #header {
+      background-color: #1c1c1c;
+      border-bottom: 1px solid #333;
+      height: 80px; /* Fixed height for the header */
+     
+      width: 100%;
+      z-index: 1000; /* Ensure it stays on top */
+    }
+    
+
+    .container {
+      display: flex;
+      align-items: center; /* Center items vertically */
+      justify-content: space-between; /* Space between logo and navbar */
+      padding: 0 20px; /* Add padding for better spacing */
+    }
+
+    .logo img {
+      max-height: 90px; /* Adjust logo height */
+      width: auto; /* Maintain aspect ratio */
+    }
+
+    .navbar {
+   flex-grow: 1; /* Allow navbar to take remaining space */
+  display: flex;
+ justify-content: flex-end; /* Align items to the right */
+ position: relative; /* Position relative for absolute children */
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-content: space-around; /* Space items evenly */
+padding: 10px;
+
+
+}
+.navbar ul li{
+padding: 10px;
+list-style: none;
+text-decoration: none;
+
+
+
+}
+.navbar ul li a{
+
+text-decoration: none;
+font-size: 20px;
+color: #fff;
+
+}
+
+.navbar ul.show {
+display: flex; /* Show menu items when toggled */
+}
+
+.mobile-nav-toggle {
+display: none; /* Hide by default */
+font-size: 24px; /* Adjust size */
+color: #fff; /* Color for the icon */
+cursor: pointer; /* Pointer cursor */
+margin-left: 20px; /* Space from the navbar */
+}
+
+@media (max-width: 768px) {
+.navbar ul {
+  display: none; /* Hide menu items by default */
+  flex-direction: column; /* Stack menu items vertically */
+  position: absolute; /* Position absolute for dropdown */
+  background-color: #1c1c1c; /* Background color */
+  width: 100%; /* Full width */
+  top: 80px; /* Position below the header */
+  left: 0; /* Align to the left */
+  z-index: 999; /* Ensure it stays on top */
+}
+
+.mobile-nav-toggle {
+  display: block; /* Show toggle icon on mobile */
+}
+}
+#hero {
+  width: 100%;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+/* Ensure proper image sizing */
+.hero-img img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+  .home-content {
+      text-align: center; /* Center text on mobile */
+  }
+
+  .hero-img {
+      margin-top: 20px; /* Add spacing between text and image */
+  }
+}
+@media(max-width:500px){
+#hero{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 20px;
+
+}
+}
+/* Define the animation */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+      transform: translateY(-20px); /* Move up by 20px */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start with 0 opacity (invisible) */
+  }
+  100% {
+      opacity: 1; /* End with full opacity (visible) */
+  }
+}
+
+/* Apply the animation to the image */
+.hero-img img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  animation: bounce 2s infinite; /* Apply the bounce animation */
+  /* OR */
+  /* animation: fadeIn 2s ease-in-out; */ /* Apply the fadeIn animation */
+}
+
+
+  #fx-pricing-widget-copyright {
+      text-align: center;
+      font-size: 13px;
+      font-family: sans-serif;
+      color: #9db2bd;
+  }
+
+  #fx-pricing-widget-copyright a {
+      text-decoration: unset;
+      color: #bb3534;
+      font-weight: 600;
+  }
+  #technology {
+      padding: 60px 0; /* Add padding for top and bottom */
+      background-color: #030b14; /* Background color for the section */
+  }
+
+  .section-title {
+      text-align: center; /* Center the section title */
+      margin-bottom: 40px; /* Space below the title */
+  }
+
+  .content {
+      display: flex; /* Use flexbox for layout */
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      gap: 20px; /* Space between columns */
+  }
+
+  .content p {
+      line-height: 1.6; /* Improve readability */
+      margin-bottom: 20px; /* Space below paragraphs */
+  }
+
+  .content ul {
+      list-style: none; /* Remove default list styling */
+      padding: 0; /* Remove padding */
+  }
+
+  .content ul li {
+      margin-bottom: 10px; /* Space between list items */
+      display: flex; /* Use flexbox for list items */
+      align-items: center; /* Center items vertically */
+  }
+
+  .content ul li i {
+      color: #00aaff; /* Color for the check icon */
+      margin-right: 10px; /* Space between icon and text */
+  }
+  
+
+  @media (max-width: 768px) {
+      .content {
+          flex-direction: column; /* Stack columns on smaller screens */
+      }
+
+      .section-title {
+          order: -1; /* Move title to the top */
+          margin-bottom: 20px; /* Space below the title */
+      }
+  }
+  .counts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  padding: 5px;
+}
+
+.content-container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Changed to column for better mobile layout */
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+}
+
+.title {
+  color: #3498db;
+  text-align: center;
+}
+
+.text {
+  color: #fff;
+  text-align: center;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .sub-about {
+      flex-direction: column; /* Switch to a single column layout */
+  }
+
+  .image-container {
+      width: 100%; /* Full width for mobile */
+      padding: 10px 0; /* Add some vertical padding */
+  }
+
+  .content-container {
+      width: 100%; /* Full width for mobile */
+      padding: 10px 0; /* Add some vertical padding */
+  }
+
+  .content {
+      align-items: center; /* Center align content */
+  }
+
+  .section-title {
+      text-align: center; /* Center align the title */
+  }
+
+  .count-box {
+      text-align: center; /* Center align text */
+      margin-bottom: 20px; /* Add spacing between sections */
+  }
+}
+/* General Services Section */
+/* General Services Section */
+/* General Services Section */
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background: #030b14;
+}
+
+/* Container for the section */
+.services-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #030b14;
+}
+
+/* Centered Title Section */
+.title-section {
+  text-align: center;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+/* Centered H2 */
+.title-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Centered Description */
+.title-section p {
+  font-size: 1rem;
+  color: #fff !important;
+  text-align: center;
+}
+
+/* Feature Cards Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Individual Feature Card */
+.feature-card {
+  background: #030b14;
+  border: 2px solid #0c69d3;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: #0c69d3;
+}
+
+.icon i {
+  font-size: 40px;
+  color: #00bfff;
+}
+
+.title a {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .features-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+      padding: 15px;
+  }
+
+  .title a {
+      font-size: 1.2rem;
+  }
+
+  .description {
+      font-size: 0.9rem;
+  }
+}
+.country-container {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+/* Header Styling */
+.country-container-header {
+  margin-bottom: 20px;
+}
+
+.country-container-header h1 {
+  font-size: 2rem;
+  color: #030b14;
+  font-weight: bold;
+}
+
+.country-container-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Country Cards Grid */
+.country-container-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 15px;
+  width: 100%;
+  max-width: 600px; /* Keeps it compact */
+}
+
+/* Individual Country Card */
+.country-container-card {
+  background: #030b14;
+  border: 1px solid #ddd;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.country-container-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon and Text */
+.country-container-card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.country-container-card-icon img {
+  width: 40px; /* Small flag size */
+  height: 25px;
+}
+
+.country-container-card-icon p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+  .country-container-cards {
+      grid-template-columns: 1fr; /* One card per row on small screens */
+  }
+}
+/* Section Styling */
+#counts {
+  background:#030b14; /* Dark theme background */
+ 
+}
+
+/* Section Title Styling */
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.section-title h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00bfff;
+}
+
+/* Description Text */
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+  text-align: justify;
+}
+
+/* Image Styling */
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column-reverse; /* Show image below text */
+      text-align: center;
+  }
+
+  .content {
+      padding: 20px;
+  }
+
+  .section-title h2,
+  .section-title h4 {
+      text-align: center;
+  }
+
+  .image {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+}
+/* Footer Styling */
+#footer {
+  background: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: center;
+}
+
+/* Footer Links */
+.footer-links a {
+  color: #00bfff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  .row {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .copyright {
+      margin-bottom: 10px;
+  }
+}    
+@media (max-width: 768px) {
+.navbar ul {
+  display: none; /* Hide menu items by default */
+  flex-direction: column; /* Stack menu items vertically */
+  position: absolute; /* Position absolute for dropdown */
+  background-color: #1c1c1c; /* Background color */
+  width: 100%; /* Full width */
+  top: 80px; /* Position below the header */
+  left: 0; /* Align to the left */
+  z-index: 999; /* Ensure it stays on top */
+}
+
+.navbar ul.show {
+  display: block; /* Show menu items when toggled */
+}
+
+.mobile-nav-toggle {
+  display: block; /* Show toggle icon on mobile */
+}
+}
+.myModal{
+padding: 5px !important;
+margin: 5px;
+}
+.modal-body{
+margin: 4px;
+}
+.modal-dialog{
+margin: 4px;
+}
+.navbar ul li a:hover{
+color: #0c488d;
+font-size: large;
+
+}
+.containers{
+padding: 5px;
+}
+.counts-myId{
+background-color: #030b14;
+}
+.counts-myId a{
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+color: #0c69d3;
+text-align: center;
+
+}
+
+#counts a{
+text-align: center !important;
+}
+.container-my-Id{
+padding: 5px;
+margin-bottom: 5px;
+}
+/* Form Container */
+
+
+/* Form Input Fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Status Messages */
+.loading,
+.error-message,
+.sent-message {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.loading {
+    color: #3498db;
+}
+
+.error-message {
+    color: #e74c3c;
+    background: #f8d7da;
+}
+
+.sent-message {
+    color: #2ecc71;
+    background: #d4edda;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .php-email-form {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        width: 100%; /* Full-width button on mobile */
+    }
+}
+/* Form Container */
+.php-email-form {
+    padding: 20px;
+    background: #030b14;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   
+    max-width: 600px; /* Default max width for larger screens */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Adjust form width for laptop views (992px - 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .php-email-form {
+        max-width: 450px; /* Smaller width for laptop views */
+    }
+}
+
+/* Adjust form width for smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 991px) {
+    .php-email-form {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+/* Info Container */
+.info {
+    background: #030b14;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Info Items */
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0; /* Remove margin for the last item */
+}
+
+/* Icons */
+.info-item i {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Text */
+.info-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .info {
+        padding: 15px;
+    }
+
+    .info-item i {
+        font-size: 20px;
+    }
+
+    .info-item p {
+        font-size: 14px;
+    }
+}
+
+</style>
+  
+  <link rel="stylesheet" href="https://pcapnetwork.com/cdn.jsdelivr.net/npm/bootstrap%405.0.1/dist/css/bootstrap.min.css">
+<script src="https://pcapnetwork.com/cdn.jsdelivr.net/npm/bootstrap%405.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://pcapnetwork.com/cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="https://pcapnetwork.com/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.7.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo Section -->
+      <div class="logo">
+        <!-- Replace 'logo.png' with your actual logo image -->
+        <a href="index.html">
+          <img src="logo.png" alt="Logo" class="logo-img">
+        </a>
+      </div>
+  
+      <nav id="navbar" class="navbar">
+        <ul id="navbar-list"> <!-- Ensure this ID is correct -->
+       <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+       <li><a class="nav-link scrollto" href="about.html">About</a></li>
+       <li><a class="nav-link scrollto" href="technology.html">Forex Trading</a></li>
+       <li><a class="nav-link scrollto" href="crypto.html">Crypto</a></li>
+       <li><a class="nav-link scrollto" href="service.html">Services</a></li>
+       <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
+       <li><a class="nav-link scrollto" href="faq.html">Faq</a></li>
+       <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+       <li><a class="getstarted scrollto" href="Reg.aspx?ref=">Register</a></li>
+       <li class="nav-item login-btn"><a class="getstarted scrollto" href="login.html">Login</a></li>
+     </ul>
+   
+     <i id="mobile-nav-toggle" class="bi bi-list mobile-nav-toggle"></i>
+   </nav>
+  
+    </div>
+  </header>
+  <!-- End Header -->  
+
+  <main id="main">
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="containers">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-about">
+            <img src="Alpha Gain.png" class="img-fluid animated" alt="">
+            <p style="text-align: justify;">Forex trading involves a wide range of participants, including individual traders, financial institutions, governments, corporations, and investors. Currencies are traded in pairs, where one currency is exchanged for another.</p>
+            <div class="social-links" style="display: flex;align-items: center;justify-content: space-evenly;">
+              <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="info">
+              <!-- Address -->
+              <div class="info-item">
+                  <i class="ri-map-pin-line"></i>
+                  <p>United Kingdom</p>
+              </div>
+      
+              <!-- Email -->
+              <div class="info-item">
+                  <i class="ri-mail-send-line"></i>
+                  <p>Info@alphagain.world</p>
+              </div>
+      
+              <!-- Phone -->
+              <div class="info-item">
+                  <i class="ri-phone-line"></i>
+                  <p>
+                      (9.30 AM to 5.30 PM UTC)<br>Customer Support
+                  </p>
+              </div>
+          </div>
+      </div>
+
+        <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+          <form action="https://pcapnetwork.com/forms/contact.php" method="post" role="form" class="php-email-form">
+              <!-- Name Input -->
+              <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+      
+              <!-- Email Input -->
+              <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+      
+              <!-- Subject Input -->
+              <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+      
+              <!-- Message Textarea -->
+              <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+      
+              <!-- Status Messages -->
+              <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+      
+              <!-- Submit Button -->
+              <div class="text-center" style="display: flex;justify-content: center;">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+          </form>
+      </div>
+
+      </div>
+
+    </div>
+    <section id="clients" class="clients">
+      <div class="container-fluid"> <!-- Use container-fluid for full width -->
+          <div class="row">
+              <div class="col-12">
+                  <div class="fx-widget-container" style="width: 100%; padding: 0;">
+                      <iframe
+                          src="https://fxpricing.com/fx-widget/ticker-tape-widget.php?id=1,2,3,5,14,20&amp;d_mode=compact-name"
+                          width="100%"
+                          height="85"
+                          style="border: none; display: block; margin: 0 auto;"
+                      ></iframe>
+                      <div id="fx-pricing-widget-copyright" style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+                          <span>Powered by </span>
+                          <a href="https://fxpricing.com/" target="_blank" style="color: #bb3534; font-weight: 600;">FX TRADING</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+      
+    </main>
+
+    
+  
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 text-lg-left text-center">
+            <div class="copyright">
+              &copy; Copyright
+              <strong>Alpha Gain <spap>
+                
+              </spap></strong>. All Rights
+              Reserved
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+              <a href="index.html" class="scrollto">Home</a>
+              <a href="about.html" class="scrollto">About</a>
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="terms.html">Terms & Conditions</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://pcapnetwork.com/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="https://pcapnetwork.com/assets/vendor/aos/aos.js"></script>
+    <script src="https://pcapnetwork.com/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://pcapnetwork.com/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="https://pcapnetwork.com/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://pcapnetwork.com/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://pcapnetwork.com/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="https://pcapnetwork.com/assets/js/main.js"></script>
+
+    <script>
+      //   $(document).ready(function(){
+      // $("#myModal").modal('show');
+      // });
+      const mobileNavToggle = document.getElementById("mobile-nav-toggle");
+const navbarList = document.getElementById("navbar-list");
+
+mobileNavToggle.addEventListener("click", () => {
+  navbarList.classList.toggle("show"); // Toggle the 'show' class
+});
+    </script>
+  </body>
+</html>
